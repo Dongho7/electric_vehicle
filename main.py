@@ -15,7 +15,12 @@ def read_data() -> pd.DataFrame:
     hover_df.fillna('', inplace=True)
     hover_df = hover_df[hover_df.columns[:-1]]
     df = df.join(hover_df)
+    image_df = pd.read_csv('./이미지주소.csv')
+    image_df.fillna('', inplace=True)
+    df = pd.merge(df, image_df, how='left', on='model')
+    df.fillna('', inplace=True)
     return df
+    
 
 class MultiApp:
     def __init__(self):
