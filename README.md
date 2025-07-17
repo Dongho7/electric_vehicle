@@ -20,7 +20,7 @@ raw_df.columns
 3개의 군집(최고속도, 배터리성능, 충전속도)으로 분류.
 
 군집 형성 전 아래와 같이 각각의 점수를 계산.
-1 최고속도 70 가속(제로백) 30 가중치적용하여
+1 최고속도 60 가속(제로백) 40 가중치적용하여
 속도점수 계산
 
 2 배터리용량40 주행거리40 배터리효율성20
@@ -31,6 +31,7 @@ raw_df.columns
 
 위 점수를 기반으로 상위 33% 데이터를 추린 후 클러스터링 수행
 그리고 추천
+![image](https://cdn.prod.website-files.com/5f1008192dda2baf6f4e16c3/60ab5871a7fd8d9b4f013185_behind%20the%20algorithm_user%20clustering.png)
 
 #### 구동방식
 
