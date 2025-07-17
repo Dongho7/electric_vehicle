@@ -79,8 +79,8 @@ def app(df):
         st.markdown("### 🚗 필터")
         selected_filters = generate_multiselect_filter(df, filter_column)
         filtered_df = return_filtered_df(df, selected_filters)
-        st.write("적용된 필터:")
-        st.dataframe(filtered_df, use_container_width=True, height=300)
+        # st.write("적용된 필터:")
+        # st.dataframe(filtered_df, use_container_width=True, height=300)
 
     with col_control:
         st.markdown("### 📊 축 선택")
@@ -96,13 +96,11 @@ def app(df):
 
     with col_output:
         st.markdown("### 📈 시각화")
-        
+        brand_filtered_df = filtered_df[filtered_df["brand"].isin(selected_brands)]
         if len(filtered_df) > 0 and axis_column and x_axis and y_axis and x_axis != "-- 축을 선택하세요 --" and y_axis != "-- 축을 선택하세요 --":
-            brand_filtered_df = filtered_df[filtered_df["brand"].isin(selected_brands)]
 
             if len(selected_brands) == 0 or len(brand_filtered_df) == 0:
                 st.warning("선택된 브랜드가 없습니다. 하나 이상 선택해주세요.")
-
 
             else:
                 fig = px.scatter(
@@ -121,84 +119,68 @@ def app(df):
             st.info("축과 브랜드를 모두 선택하면 그래프가 표시됩니다.")
 
     if len(filtered_df) > 0 and axis_column and x_axis and x_axis != "-- 축을 선택하세요 --":
-        valid_series = filtered_df[x_axis].dropna()
-        data_min = valid_series.min()
-        data_max = valid_series.max()
-
-        # 예쁜 숫자로 반올림
-        rounded_min = np.floor(data_min / 10) * 10
-        rounded_max = np.ceil(data_max / 10) * 10
-
-        # 균등한 bin
-        n_bins = 10
-        bin_edges = np.linspace(rounded_min, rounded_max, n_bins + 1)
-
-        # 안전하게 bin 적용
-        filtered_df = filtered_df.dropna(subset=[x_axis])
-        filtered_df['bin'] = pd.cut(filtered_df[x_axis], bins=bin_edges, include_lowest=True)
-        filtered_df['bin'] = filtered_df['bin'].astype(str)
-
-        # 3. 그룹핑
-        grouped = filtered_df.groupby(['bin', 'brand'], observed=True).size().reset_index(name='count')
-
+      
         # 4. 시각화
-        fig2 = px.bar(
-            grouped,
-            x='bin',
-            y='count',
+        fig2 = px.histogram(
+            brand_filtered_df,
+            x=x_axis,
             color='brand',
+            nbins=6,
             title=f'Brand Distribution by {eng_to_kor.get(x_axis, x_axis)}',
             labels={
-                'bin': f"{eng_to_kor.get(x_axis, x_axis)} 구간",
+                x_axis: f"{eng_to_kor.get(x_axis, x_axis)}",
                 'count': '차량 수',
                 'brand': '브랜드'
-            }
+            },
+            # hover_data=brand_filtered_df.columns
         )
+
         fig2.update_layout(
             xaxis_tickangle=-45,
-            barmode='stack',
             height=500
+        )
+        fig2.update_traces(
+            marker_line_width=1,
+            marker_line_color='white'
         )
         st.plotly_chart(fig2, use_container_width=True)
 
+
     if len(filtered_df) > 0 and axis_column and y_axis and y_axis != "-- 축을 선택하세요 --":
-        valid_series = filtered_df[y_axis].dropna()
-        data_min = valid_series.min()
-        data_max = valid_series.max()
-
-        # 예쁜 숫자로 반올림
-        rounded_min = np.floor(data_min / 10) * 10
-        rounded_max = np.ceil(data_max / 10) * 10
-
-        # 균등한 bin
-        n_bins = 10
-        bin_edges = np.linspace(rounded_min, rounded_max, n_bins + 1)
-
-        # 안전하게 bin 적용
-        filtered_df = filtered_df.dropna(subset=[y_axis])
-        filtered_df['bin'] = pd.cut(filtered_df[y_axis], bins=bin_edges, include_lowest=True)
-        filtered_df['bin'] = filtered_df['bin'].astype(str)
-
-        # 3. 그룹핑
-        grouped = filtered_df.groupby(['bin', 'brand'], observed=True).size().reset_index(name='count')
-
-        # 4. 시각화
-        fig3 = px.bar(
-            grouped,
-            x='bin',
-            y='count',
+        fig3 = px.histogram(
+            brand_filtered_df,
+            x=y_axis,
             color='brand',
+            nbins=6,
             title=f'Brand Distribution by {eng_to_kor.get(y_axis, y_axis)}',
             labels={
-                'bin': f"{eng_to_kor.get(y_axis, y_axis)} 구간",
+                x_axis: f"{eng_to_kor.get(y_axis, y_axis)}",
                 'count': '차량 수',
                 'brand': '브랜드'
-            }
+            },
+            # hover_data=brand_filtered_df.columns
         )
+
         fig3.update_layout(
             xaxis_tickangle=-45,
-            barmode='stack',
             height=500
+        )
+        fig3.update_traces(
+            marker_line_width=1,
+            marker_line_color='white'
         )
         st.plotly_chart(fig3, use_container_width=True)
         
+    with st.sidebar:
+        st.markdown("### 🚗 필터링된 차량 목록")
+        
+        if len(filtered_df) == 0:
+            st.warning("조건에 맞는 차량이 없습니다.")
+        else:
+            st.markdown(f"**총 {len(filtered_df)}대의 차량이 필터링됨**")
+            # 브랜드와 모델만 보여주는 축약 리스트
+            st.dataframe(
+                filtered_df[["brand", "model"]],
+                use_container_width=True,
+                height=min(400, 40 + 25 * len(filtered_df))  # 표시 높이 유동 조절
+            )

@@ -1,8 +1,7 @@
 import streamlit as st
-import home
+import home, about 
 from streamlit_option_menu import option_menu
 import pandas as pd
-
 
 @st.cache_data
 def read_data() -> pd.DataFrame:
@@ -30,7 +29,7 @@ class MultiApp:
         with st.sidebar:
             app = option_menu(
                 menu_title="Electric Vehicle ",
-                options=["찾기", "기타 시각화", "개발자"],
+                options=["찾기", "기타 시각화", "정보"],
                 icons=[
                     "house-fill",
                     "person-circle",
@@ -61,8 +60,8 @@ class MultiApp:
             home.app(self.df)
         # if app == "기타 시각화":
         #     test.app(self.df)
-        # if app == "개발자":
-        #     about.app(self.df)
+        if app == "정보":
+            about.app(self.df)
 
 if __name__ == "__main__":
     multi_app = MultiApp()
