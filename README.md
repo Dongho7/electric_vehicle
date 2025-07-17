@@ -37,4 +37,4 @@ raw_df.columns
 
 ---
 ## 구동방식
-streamlit
+[streamlit](https://electricvehicle-rkzpnw8ur6hpnl5ythsdrd.streamlit.app/)
