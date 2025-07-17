@@ -1,11 +1,21 @@
 import streamlit as st
 import home
 from streamlit_option_menu import option_menu
+import pandas as pd
 
+@st.cache_data
+def read_data() -> pd.DataFrame:
+    '''
+    세션 실행 시 초기 데이터 읽기 1번
+    '''
+    df = pd.read_csv('./dropped_df_processed_encoded.csv')
+    df.fillna('', inplace=True)
+    return df
 
 class MultiApp:
     def __init__(self):
         self.apps = []
+        self.df = read_data()
 
     def add_app(self, title, func):
         self.apps.append({"title": title, "function": func})
@@ -40,13 +50,13 @@ class MultiApp:
                     "menu-title": {"color":"white"}
                 },
             )
-
+            
         if app == "찾기":
-            home.app()
+            home.app(self.df)
         # if app == "기타 시각화":
-        #     test.app()
+        #     test.app(self.df)
         # if app == "개발자":
-        #     about.app()
+        #     about.app(self.df)
 
 if __name__ == "__main__":
     multi_app = MultiApp()

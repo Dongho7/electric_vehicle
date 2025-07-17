@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-def app():
+
+def app(df):
     st.subheader("나에게 맞는 전기차 찾기")
     st.subheader("")
     image = 'log.png'
@@ -20,45 +21,69 @@ def app():
         
     st.write("hello")
 
+    filter_column = ['car_size', 'drivetrain', 'car_body_type']  # 필터 변수
+    car_column = ['brand', 'model']  # 고정 값
+    axis_column = [col_name for col_name in df.columns if col_name not in filter_column + car_column]  # 축 변수
     
-    
+
+    def generate_multiselect_filter(df, filter_column) -> list:
+        '''
+        "필터"용으로 지정된 column 에 대해서 복수 선택이 가능한
+        multiselect UI 생성
+        '''
+        filtered_variable = []
+        for filter_element in filter_column:
+            selected = st.multiselect(
+                f'{filter_element} 를 한개 이상 골라주세요',
+                options=df[filter_element].unique().tolist()
+            )
+            filtered_variable.append((filter_element, selected))
+        return filtered_variable
+
+    def return_filtered_df(df: pd.DataFrame, filter_zip: list) -> pd.DataFrame:
+        '''
+        선택된 필터 기준으로 DataFrame 필터링
+        df = 전체 df
+        filter_zip = ['차종', ['SUV', '헷지백']]
+        '''
+        for col, selected_values in filter_zip:
+            if selected_values:  # 선택된 값이 있다면 필터 적용
+                df = df[df[col].isin(selected_values)]
+        return df
 
 
-    df = pd.read_csv("C:\\ITstudy\\01_python\\01_electric_vehichle\\dropped_df_processed_encoded.csv") 
-    st.dataframe(df)
+    def 반전(x, y):
+        '''
+        버튼 x y 축 칼럼명 반전
+        '''
 
-    selected_drivetrain = st.multiselect('Multiselect', ["FWD", "RWD", "AWD"])
-
-    if selected_drivetrain:
-        filtered_df = df[df["drivetrain"].isin(selected_drivetrain)]
-        st.dataframe(filtered_df)
-        st.dataframe(filtered_df["drivetrain"].value_counts())
-    else:
-        st.write("구동 방식을 선택해주세요.")
-
-
-    selected_carbody_type = st.multiselect('Multiselect', ['세단', 'SUV', '승합차', '스포츠카'])
-    if selected_carbody_type:
-        filtered_df = filtered_df[filtered_df["car_body_type"].isin(selected_carbody_type)]
-        st.dataframe(filtered_df)
-        st.dataframe(filtered_df["car_body_type"].value_counts())
-    else:
-        st.write("차종을 선택해주세요.")
-
-
-    selected_carsize = st.multiselect('Multiselect', ['소형', '준중형', '준대형', '중형', '대형', '승합차', '초소형', '스포츠카'])
-    if selected_carsize:
-        filtered_df = filtered_df[filtered_df["car_size"].isin(selected_carsize)]
-        st.dataframe(filtered_df)
-        st.dataframe(filtered_df["car_size"].value_counts())
-    else:
-        st.write("차 사이즈를 선택해주세요.")
+    # 체크박스 (축 선택 x, y)
+    def select_checkbox(axis_column):
+        '''
+        인풋 : [칼럼명, 칼럼명]
+        return : x : 칼럼명 선택 1, y : ㅋ
+        '''
+        return x, y
 
 
 
 
 
 
+############# 실행 ##################
+
+    selected_filters = generate_multiselect_filter(df, filter_column)
+
+    # 필터링된 DataFrame 생성
+    filtered_df = return_filtered_df(df, selected_filters)
+
+    # 결과 출력
+    st.write("적용된 필터:", selected_filters)
+    st.dataframe(filtered_df)
+
+
+################
+#### 참고용 #####
     st.slider('Slide me', min_value=0, max_value=10)
 
     st.select_slider('Slide to select', options=[1,'2'])
