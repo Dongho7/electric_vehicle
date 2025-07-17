@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import plotly.express as px
 
 def app(df):
     st.subheader("나에게 맞는 전기차 찾기")
@@ -59,11 +59,21 @@ def app(df):
 
     # 체크박스 (축 선택 x, y)
     def select_checkbox(axis_column):
-        '''
-        인풋 : [칼럼명, 칼럼명]
-        return : x : 칼럼명 선택 1, y : ㅋ
-        '''
+        st.write("데이터 시각화를 위한 축을 선택해주세요.")
+        axis_options = ["-- 축을 선택하세요 --"] + axis_column
+
+        x = st.selectbox("X축 변수 선택", axis_options, key="x_axis")
+        
+        y_candidates = [col for col in axis_column if col != x]
+        y_options = ["-- 축을 선택하세요 --"] + y_candidates
+        y = st.selectbox("Y축 변수 선택", y_options, key="y_axis")
+
+        # 실제 선택 안 했을 경우 None으로 처리
+        if x == "-- 축을 선택하세요 --" or y == "-- 축을 선택하세요 --":
+            return None, None
+        
         return x, y
+
 
 
 
@@ -82,7 +92,20 @@ def app(df):
     st.dataframe(filtered_df)
 
 
-################
+    # axis_column = [col for col in filtered_df.columns if col not in filter_column + car_column]
+
+    if len(filtered_df) > 0 and axis_column:
+        x_axis, y_axis = select_checkbox(axis_column) # x, y
+
+        if x_axis is not None and y_axis is not None:
+            st.write(f"X축: {x_axis}, Y축: {y_axis}")
+            fig = px.scatter(filtered_df, x=x_axis, y=y_axis, hover_data=car_column, color =car_column[0])
+            st.plotly_chart(fig)
+        else:
+            st.info("X축과 Y축을 모두 선택해야 그래프가 표시됩니다.")
+    else:
+        st.warning("시각화를 위한 데이터가 부족하거나 축 선택이 불가능합니다.")
+    ################
 #### 참고용 #####
     st.slider('Slide me', min_value=0, max_value=10)
 
