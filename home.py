@@ -51,7 +51,8 @@ def app(df):
         filtered_variable = []
         for filter_element in filter_column:
             options = sorted(df[filter_element].dropna().unique().tolist())
-            default_value = [options[0]] if options else []
+            # default_value = [options[0]] if options else []
+            default_value = []
             selected = st.multiselect(f'{filter_element}', options=options, default=default_value)
             filtered_variable.append((filter_element, selected))
         return filtered_variable
@@ -76,14 +77,14 @@ def app(df):
     col_filter, col_control, col_output = st.columns([1.5, 1.2, 3.3])
 
     with col_filter:
-        st.markdown("### 🚗 필터")
+        st.markdown("### 🚗 필터 ①")
         selected_filters = generate_multiselect_filter(df, filter_column)
         filtered_df = return_filtered_df(df, selected_filters)
         # st.write("적용된 필터:")
         # st.dataframe(filtered_df, use_container_width=True, height=300)
 
     with col_control:
-        st.markdown("### 📊 축 선택")
+        st.markdown("### 📊 축 선택 ②")
         if len(filtered_df) > 0 and axis_column:
             x_axis, y_axis = select_checkbox(axis_column)
 
@@ -91,11 +92,11 @@ def app(df):
             brand_list = sorted(filtered_df["brand"].dropna().unique().tolist())
             selected_brands = []
             for brand in brand_list:
-                if st.checkbox(brand, value=True, key=f"brand_{brand}"):
+                if st.checkbox(brand, value=False, key=f"brand_{brand}"):
                     selected_brands.append(brand)
 
     with col_output:
-        st.markdown("### 📈 시각화")
+        st.markdown("### 📈 시각화 ③")
         brand_filtered_df = filtered_df[filtered_df["brand"].isin(selected_brands)]
         if len(filtered_df) > 0 and axis_column and x_axis and y_axis and x_axis != "-- 축을 선택하세요 --" and y_axis != "-- 축을 선택하세요 --":
 

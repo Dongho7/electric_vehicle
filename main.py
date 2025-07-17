@@ -29,7 +29,7 @@ class MultiApp:
         with st.sidebar:
             app = option_menu(
                 menu_title="Electric Vehicle ",
-                options=["찾기", "기타 시각화", "정보"],
+                options=["정보", "찾기", "기타 시각화"],
                 icons=[
                     "house-fill",
                     "person-circle",
