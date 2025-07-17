@@ -3,6 +3,7 @@ import home
 from streamlit_option_menu import option_menu
 import pandas as pd
 
+
 @st.cache_data
 def read_data() -> pd.DataFrame:
     '''
@@ -10,6 +11,11 @@ def read_data() -> pd.DataFrame:
     '''
     df = pd.read_csv('./dropped_df_processed_encoded.csv')
     df.fillna('', inplace=True)
+
+    hover_df = pd.read_csv('./hover_df_processed_encoded_ver2.csv')
+    hover_df.fillna('', inplace=True)
+    hover_df = hover_df[hover_df.columns[:-1]]
+    df = df.join(hover_df)
     return df
 
 class MultiApp:
@@ -32,7 +38,7 @@ class MultiApp:
                     "info-circle-fill",
                 ],
                 menu_icon="chat-text-fill",
-                default_index=1,
+                default_index=0,
                 styles={
                     "container": {
                         "padding": "5!important",

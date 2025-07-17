@@ -1,153 +1,204 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import numpy as np
 
 def app(df):
-    st.subheader("나에게 맞는 전기차 찾기")
-    st.subheader("")
-    image = 'log.png'
+    st.set_page_config(layout="wide")  # 전체 화면 폭 사용
+    st.title("🔍 나에게 맞는 전기차 찾기")
 
     hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        </style>
+    """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-    col1, col2, col3 = st.columns([1,2,1])
-    with col2:
-        st.image(image)
-        
-    st.write("hello")
+    image = 'log.png'
+    col_img, col_title = st.columns([1, 4])
+    with col_img:
+        st.image(image, width=120)
 
-    filter_column = ['car_size', 'drivetrain', 'car_body_type']  # 필터 변수
-    car_column = ['brand', 'model']  # 고정 값
-    axis_column = [col_name for col_name in df.columns if col_name not in filter_column + car_column]  # 축 변수
-    
+    eng_to_kor = {
+    "brand": "브랜드",
+    "model": "모델",
+    "top_speed_kmh": "최고 속도 (km/h)",
+    "battery_capacity_kWh": "배터리 용량 (kWh)",
+    "efficiency_wh_per_km": "효율 (Wh/km)",
+    "range_km": "주행 가능 거리 (km)",
+    "acceleration_0_100_s": "가속력 (0→100km/h, 초)",
+    "fast_charging_power_kw_dc": "급속 충전 전력 (kW, DC)",
+    "fast_charge_port": "급속 충전 포트",
+    "cargo_volume_l": "적재 용량 (L)",
+    "seats": "좌석 수",
+    "drivetrain": "구동 방식",
+    "car_body_type": "차체 형태",
+    "car_size": "차 크기",
+    "length_mm": "전장 (mm)",
+    "width_mm": "전폭 (mm)",
+    "height_mm": "전고 (mm)",
+    "torque_nm": "토크 (Nm)",
+    "battery_type": "배터리 종류"
+    }
+
+    filter_column = ['car_size', 'drivetrain', 'car_body_type']
+    car_column = ['brand', 'model']
+    hover_column = ["length_mm", "width_mm", "height_mm", "torque_nm", "battery_type", "seats"]
+    axis_column = [col for col in df.columns if col not in filter_column + car_column + hover_column]
 
     def generate_multiselect_filter(df, filter_column) -> list:
-        '''
-        "필터"용으로 지정된 column 에 대해서 복수 선택이 가능한
-        multiselect UI 생성
-        '''
         filtered_variable = []
         for filter_element in filter_column:
-            selected = st.multiselect(
-                f'{filter_element} 를 한개 이상 골라주세요',
-                options=df[filter_element].unique().tolist()
-            )
+            options = sorted(df[filter_element].dropna().unique().tolist())
+            default_value = [options[0]] if options else []
+            selected = st.multiselect(f'{filter_element}', options=options, default=default_value)
             filtered_variable.append((filter_element, selected))
         return filtered_variable
 
     def return_filtered_df(df: pd.DataFrame, filter_zip: list) -> pd.DataFrame:
-        '''
-        선택된 필터 기준으로 DataFrame 필터링
-        df = 전체 df
-        filter_zip = ['차종', ['SUV', '헷지백']]
-        '''
         for col, selected_values in filter_zip:
-            if selected_values:  # 선택된 값이 있다면 필터 적용
+            if selected_values:
                 df = df[df[col].isin(selected_values)]
         return df
 
-
-    def 반전(x, y):
-        '''
-        버튼 x y 축 칼럼명 반전
-        '''
-
-    # 체크박스 (축 선택 x, y)
     def select_checkbox(axis_column):
-        st.write("데이터 시각화를 위한 축을 선택해주세요.")
         axis_options = ["-- 축을 선택하세요 --"] + axis_column
-
-        x = st.selectbox("X축 변수 선택", axis_options, key="x_axis")
-        
+        x = st.selectbox("X축 변수", axis_options, key="x_axis")
         y_candidates = [col for col in axis_column if col != x]
         y_options = ["-- 축을 선택하세요 --"] + y_candidates
-        y = st.selectbox("Y축 변수 선택", y_options, key="y_axis")
-
-        # 실제 선택 안 했을 경우 None으로 처리
-        if x == "-- 축을 선택하세요 --" or y == "-- 축을 선택하세요 --":
-            return None, None
-        
+        y = st.selectbox("Y축 변수", y_options, key="y_axis")
+        # if x == "-- 축을 선택하세요 --" or y == "-- 축을 선택하세요 --":
+        #     return None, None
         return x, y
 
+    # 🎛️ 대시보드 구조로 레이아웃 나누기
+    col_filter, col_control, col_output = st.columns([1.5, 1.2, 3.3])
+
+    with col_filter:
+        st.markdown("### 🚗 필터")
+        selected_filters = generate_multiselect_filter(df, filter_column)
+        filtered_df = return_filtered_df(df, selected_filters)
+        st.write("적용된 필터:")
+        st.dataframe(filtered_df, use_container_width=True, height=300)
+
+    with col_control:
+        st.markdown("### 📊 축 선택")
+        if len(filtered_df) > 0 and axis_column:
+            x_axis, y_axis = select_checkbox(axis_column)
+
+            st.markdown("### ✅ 브랜드 선택")
+            brand_list = sorted(filtered_df["brand"].dropna().unique().tolist())
+            selected_brands = []
+            for brand in brand_list:
+                if st.checkbox(brand, value=True, key=f"brand_{brand}"):
+                    selected_brands.append(brand)
+
+    with col_output:
+        st.markdown("### 📈 시각화")
+        
+        if len(filtered_df) > 0 and axis_column and x_axis and y_axis and x_axis != "-- 축을 선택하세요 --" and y_axis != "-- 축을 선택하세요 --":
+            brand_filtered_df = filtered_df[filtered_df["brand"].isin(selected_brands)]
+
+            if len(selected_brands) == 0 or len(brand_filtered_df) == 0:
+                st.warning("선택된 브랜드가 없습니다. 하나 이상 선택해주세요.")
 
 
+            else:
+                fig = px.scatter(
+                    brand_filtered_df,
+                    x=x_axis,
+                    y=y_axis,
+                    color="brand",
+                    hover_data=car_column + hover_column
+                )
+                fig.update_traces(
+                    marker=dict(size=11)  # 모든 점 크기를 10으로 고정
+                )
+                st.plotly_chart(fig, use_container_width=True)
 
-
-
-
-############# 실행 ##################
-
-    selected_filters = generate_multiselect_filter(df, filter_column)
-
-    # 필터링된 DataFrame 생성
-    filtered_df = return_filtered_df(df, selected_filters)
-
-    # 결과 출력
-    st.write("적용된 필터:", selected_filters)
-    st.dataframe(filtered_df)
-
-
-    # axis_column = [col for col in filtered_df.columns if col not in filter_column + car_column]
-
-    if len(filtered_df) > 0 and axis_column:
-        x_axis, y_axis = select_checkbox(axis_column) # x, y
-
-        if x_axis is not None and y_axis is not None:
-            st.write(f"X축: {x_axis}, Y축: {y_axis}")
-            fig = px.scatter(filtered_df, x=x_axis, y=y_axis, hover_data=car_column, color =car_column[0])
-            st.plotly_chart(fig)
         else:
-            st.info("X축과 Y축을 모두 선택해야 그래프가 표시됩니다.")
-    else:
-        st.warning("시각화를 위한 데이터가 부족하거나 축 선택이 불가능합니다.")
-    ################
-#### 참고용 #####
-    st.slider('Slide me', min_value=0, max_value=10)
+            st.info("축과 브랜드를 모두 선택하면 그래프가 표시됩니다.")
 
-    st.select_slider('Slide to select', options=[1,'2'])
+    if len(filtered_df) > 0 and axis_column and x_axis and x_axis != "-- 축을 선택하세요 --":
+        valid_series = filtered_df[x_axis].dropna()
+        data_min = valid_series.min()
+        data_max = valid_series.max()
 
-    st.text_input('Enter Article')
+        # 예쁜 숫자로 반올림
+        rounded_min = np.floor(data_min / 10) * 10
+        rounded_max = np.ceil(data_max / 10) * 10
 
-    st.number_input('Enter required number')
+        # 균등한 bin
+        n_bins = 10
+        bin_edges = np.linspace(rounded_min, rounded_max, n_bins + 1)
 
-    st.text_area('Entered article text')
+        # 안전하게 bin 적용
+        filtered_df = filtered_df.dropna(subset=[x_axis])
+        filtered_df['bin'] = pd.cut(filtered_df[x_axis], bins=bin_edges, include_lowest=True)
+        filtered_df['bin'] = filtered_df['bin'].astype(str)
 
-    st.date_input('Select date')
+        # 3. 그룹핑
+        grouped = filtered_df.groupby(['bin', 'brand'], observed=True).size().reset_index(name='count')
 
-    st.time_input('Select Time')
+        # 4. 시각화
+        fig2 = px.bar(
+            grouped,
+            x='bin',
+            y='count',
+            color='brand',
+            title=f'Brand Distribution by {eng_to_kor.get(x_axis, x_axis)}',
+            labels={
+                'bin': f"{eng_to_kor.get(x_axis, x_axis)} 구간",
+                'count': '차량 수',
+                'brand': '브랜드'
+            }
+        )
+        fig2.update_layout(
+            xaxis_tickangle=-45,
+            barmode='stack',
+            height=500
+        )
+        st.plotly_chart(fig2, use_container_width=True)
 
-    st.file_uploader('File CSV uploader')
+    if len(filtered_df) > 0 and axis_column and y_axis and y_axis != "-- 축을 선택하세요 --":
+        valid_series = filtered_df[y_axis].dropna()
+        data_min = valid_series.min()
+        data_max = valid_series.max()
 
-    data= "hello"
+        # 예쁜 숫자로 반올림
+        rounded_min = np.floor(data_min / 10) * 10
+        rounded_max = np.ceil(data_max / 10) * 10
 
+        # 균등한 bin
+        n_bins = 10
+        bin_edges = np.linspace(rounded_min, rounded_max, n_bins + 1)
 
-    if data:= st.camera_input("Click a Snap"): 
-        st.download_button('Download Source data', data, "my.png")
+        # 안전하게 bin 적용
+        filtered_df = filtered_df.dropna(subset=[y_axis])
+        filtered_df['bin'] = pd.cut(filtered_df[y_axis], bins=bin_edges, include_lowest=True)
+        filtered_df['bin'] = filtered_df['bin'].astype(str)
 
-    st.color_picker('Pick a color')
+        # 3. 그룹핑
+        grouped = filtered_df.groupby(['bin', 'brand'], observed=True).size().reset_index(name='count')
 
-
-
-    #출력 
-    st.text('Tushar-Aggarwal.com')
-    st.markdown('[Tushar-Aggarwal.com](https://tushar-aggarwal.com)')
-    st.caption('Success')
-    st.latex(r''' e^{i\pi} + 1 = 0 ''')
-    st.write('Supreme Applcations by Tushar Aggarwal')
-    st.write(['st', 'is <', 3]) # see *
-    st.title('Streamlit Magic Cheat Sheets')
-    st.header('Developed by Tushar Aggarwal')
-    st.subheader('visit tushar-aggarwal.com')
-    st.code('for i in range(8): print(i)')
-    st.image('https://i.imgur.com/t2ewhfH.png')
-    # * optional kwarg unsafe_allow_html = Trues
-
-
-
-
-
+        # 4. 시각화
+        fig3 = px.bar(
+            grouped,
+            x='bin',
+            y='count',
+            color='brand',
+            title=f'Brand Distribution by {eng_to_kor.get(y_axis, y_axis)}',
+            labels={
+                'bin': f"{eng_to_kor.get(y_axis, y_axis)} 구간",
+                'count': '차량 수',
+                'brand': '브랜드'
+            }
+        )
+        fig3.update_layout(
+            xaxis_tickangle=-45,
+            barmode='stack',
+            height=500
+        )
+        st.plotly_chart(fig3, use_container_width=True)
+        
