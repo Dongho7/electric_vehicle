@@ -1,0 +1,479 @@
+brand,model,top_speed_kmh,battery_capacity_kWh,efficiency_wh_per_km,range_km,acceleration_0_100_s,fast_charging_power_kw_dc,fast_charge_port,cargo_volume_l,seats,drivetrain,car_body_type,car_size
+Abarth,500e Convertible,155,37.8,156,225,7.0,67,CCS,185,4,FWD,세단,소형
+Abarth,500e Hatchback,155,37.8,149,225,7.0,67,CCS,185,4,FWD,세단,소형
+Abarth,600e Scorpionissima,200,50.8,158,280,5.9,79,CCS,360,5,FWD,SUV,소형
+Abarth,600e Turismo,200,50.8,158,280,6.2,79,CCS,360,5,FWD,SUV,소형
+Aiways,U5,150,60.0,156,315,7.5,78,CCS,496,5,FWD,SUV,준중형
+Aiways,U6,160,60.0,150,350,7.0,78,CCS,472,5,FWD,SUV,준중형
+Alfa,Romeo Junior Elettrica 54 kWh,150,50.8,128,320,9.0,85,CCS,400,5,FWD,SUV,소형
+Alfa,Romeo Junior Elettrica 54 kWh Veloce,200,50.8,164,310,6.0,85,CCS,400,5,FWD,SUV,소형
+Alpine,A290 Electric 180 hp,160,52.0,138,310,7.4,70,CCS,326,5,FWD,세단,소형
+Alpine,A290 Electric 220 hp,170,52.0,144,305,6.4,70,CCS,326,5,FWD,세단,소형
+Audi,A6 Avant e-tron,210,75.8,146,465,6.0,150,CCS,502,5,RWD,세단,준대형
+Audi,A6 Avant e-tron performance,210,94.9,151,575,5.4,200,CCS,502,5,RWD,세단,준대형
+Audi,A6 Avant e-tron quattro,210,94.9,157,560,4.5,200,CCS,502,5,AWD,세단,준대형
+Audi,A6 Sportback e-tron,210,75.8,136,495,6.0,150,CCS,502,5,RWD,세단,준대형
+Audi,A6 Sportback e-tron performance,210,94.9,141,610,5.4,200,CCS,502,5,RWD,세단,준대형
+Audi,A6 Sportback e-tron quattro,210,94.9,147,590,4.7,200,CCS,502,5,AWD,세단,준대형
+Audi,Q4 Sportback e-tron 40,160,59.0,156,340,8.1,110,CCS,520,5,RWD,SUV,준중형
+Audi,Q4 Sportback e-tron 45,180,77.0,162,435,6.7,120,CCS,535,5,RWD,SUV,준중형
+Audi,Q4 Sportback e-tron 45 quattro,180,77.0,165,410,6.6,120,CCS,535,5,AWD,SUV,준중형
+Audi,Q4 Sportback e-tron 55 quattro,180,77.0,165,415,5.4,120,CCS,535,5,AWD,SUV,준중형
+Audi,Q4 e-tron 40,160,59.0,159,325,8.1,110,CCS,520,5,RWD,SUV,준중형
+Audi,Q4 e-tron 45,180,77.0,169,420,6.7,120,CCS,520,5,RWD,SUV,준중형
+Audi,Q4 e-tron 45 quattro,180,77.0,171,395,6.6,120,CCS,520,5,AWD,SUV,준중형
+Audi,Q4 e-tron 55 quattro,180,77.0,171,395,5.4,120,CCS,520,5,AWD,SUV,준중형
+Audi,Q6 e-tron,210,75.8,166,395,7.0,150,CCS,526,5,RWD,SUV,중형
+Audi,Q6 e-tron Sportback,210,75.8,139,410,7.0,150,CCS,511,5,RWD,SUV,중형
+Audi,Q6 e-tron Sportback performance,210,94.9,145,510,6.6,190,CCS,511,5,RWD,SUV,중형
+Audi,Q6 e-tron Sportback quattro,210,94.9,149,500,5.9,200,CCS,511,5,AWD,SUV,중형
+Audi,Q6 e-tron performance,210,94.9,171,490,6.6,190,CCS,526,5,RWD,SUV,중형
+Audi,Q6 e-tron quattro,210,94.9,176,480,5.9,200,CCS,720,5,AWD,SUV,중형
+Audi,S6 Avant e-tron,240,94.9,156,530,3.9,200,CCS,502,5,AWD,세단,준대형
+Audi,S6 Sportback e-tron,240,94.9,149,555,3.9,200,CCS,502,5,AWD,세단,준대형
+Audi,SQ6 e-tron,230,94.9,169,470,4.3,200,CCS,514,5,AWD,SUV,중형
+Audi,SQ6 e-tron Sportback,230,94.9,164,495,4.3,200,CCS,511,5,AWD,SUV,중형
+Audi,e-tron GT RS,250,97.0,184,525,2.8,281,CCS,350,4,AWD,세단,대형
+Audi,e-tron GT RS performance,250,97.0,182,525,2.5,281,CCS,350,4,AWD,세단,대형
+Audi,e-tron GT S,245,97.0,172,540,3.4,281,CCS,405,4,AWD,세단,대형
+Audi,e-tron GT quattro,245,97.0,169,540,4.0,281,CCS,405,4,AWD,세단,대형
+BMW,i4 M50,225,81.3,197,450,3.9,131,CCS,470,5,AWD,세단,중형
+BMW,i4 eDrive35,190,67.1,174,430,6.0,95,CCS,470,5,RWD,세단,중형
+BMW,i4 eDrive40,190,81.3,174,515,5.6,131,CCS,470,5,RWD,세단,중형
+BMW,i4 xDrive40,200,81.3,183,490,5.1,131,CCS,470,5,AWD,세단,중형
+BMW,i5 M60 xDrive Sedan (MY25),230,81.2,172,430,3.8,136,CCS,490,5,AWD,세단,준대형
+BMW,i5 M60 xDrive Touring (MY25),230,81.2,179,425,3.9,136,CCS,570,5,AWD,세단,준대형
+BMW,i5 eDrive40 Sedan (MY25),193,81.2,159,480,6.0,136,CCS,490,5,RWD,세단,준대형
+BMW,i5 eDrive40 Touring (MY25),193,81.2,165,465,6.1,136,CCS,570,5,RWD,세단,준대형
+BMW,i5 xDrive40 Sedan (MY25),215,81.2,167,465,5.4,136,CCS,490,5,AWD,세단,준대형
+BMW,i5 xDrive40 Touring (MY25),215,81.2,174,450,5.5,136,CCS,570,5,AWD,세단,준대형
+BMW,i7 M70 xDrive,250,101.7,208,490,3.7,159,CCS,500,5,AWD,세단,대형
+BMW,i7 eDrive50,205,101.7,177,520,5.5,159,CCS,500,5,RWD,세단,대형
+BMW,i7 xDrive60,240,101.7,172,510,4.7,159,CCS,500,5,AWD,세단,대형
+BMW,iX M70 xDrive,250,108.9,209,500,3.8,150,CCS,500,5,AWD,SUV,준대형
+BMW,iX xDrive45,200,94.8,193,470,5.1,115,CCS,500,5,AWD,SUV,준대형
+BMW,iX xDrive60,200,109.1,194,525,4.6,150,CCS,500,5,AWD,SUV,준대형
+BMW,iX1 eDrive20,170,64.7,150,390,8.3,94,CCS,490,5,FWD,SUV,준중형
+BMW,iX1 xDrive30,180,64.7,155,380,5.6,94,CCS,490,5,AWD,SUV,준중형
+BMW,iX2 eDrive20,170,64.7,147,395,8.6,94,CCS,525,5,FWD,SUV,준중형
+BMW,iX2 xDrive30,180,64.7,155,385,5.6,94,CCS,525,5,AWD,SUV,준중형
+BYD,ATTO 2,160,45.1,145,245,7.9,51,CCS,400,5,FWD,SUV,소형
+BYD,ATTO 3 (MY25),160,60.5,144,340,7.3,75,CCS,440,5,FWD,SUV,준중형
+BYD,DOLPHIN 44.9 kWh Active,150,44.9,132,265,12.3,50,CCS,345,5,FWD,세단,준중형
+BYD,DOLPHIN 44.9 kWh Boost,160,44.9,145,260,8.0,50,CCS,345,5,FWD,세단,준중형
+BYD,DOLPHIN 60.4 kWh,160,60.5,142,350,7.0,65,CCS,345,5,FWD,세단,준중형
+BYD,DOLPHIN SURF 30 kWh Active,150,30.0,136,190,11.1,45,CCS,308,4,FWD,세단,소형
+BYD,DOLPHIN SURF 43.2 kWh Boost,150,43.2,134,270,12.1,60,CCS,308,4,FWD,세단,소형
+BYD,DOLPHIN SURF 43.2 kWh Comfort,150,43.2,139,265,9.1,60,CCS,308,4,FWD,세단,소형
+BYD,SEAL 61.4 kWh RWD Comfort,220,61.4,133,365,7.5,75,CCS,400,5,RWD,세단,중형
+BYD,SEAL 82.5 kWh AWD Excellence,180,82.5,159,445,3.8,100,CCS,400,5,AWD,세단,중형
+BYD,SEAL 82.5 kWh RWD Design,180,82.5,145,480,5.9,100,CCS,400,5,RWD,세단,중형
+BYD,SEAL U 71.8 kWh Comfort,175,71.8,171,360,9.3,72,CCS,552,5,FWD,SUV,중형
+BYD,SEAL U 87 kWh Design,175,87.0,174,425,9.6,85,CCS,552,5,FWD,SUV,중형
+BYD,SEALION 7 82.5 kWh AWD Design,215,82.5,181,400,4.5,115,CCS,520,5,AWD,SUV,중형
+BYD,SEALION 7 82.5 kWh RWD Comfort,215,82.5,171,415,6.7,115,CCS,520,5,RWD,SUV,중형
+BYD,SEALION 7 91.3 kWh AWD Excellence,215,91.3,182,430,4.5,165,CCS,520,5,AWD,SUV,중형
+BYD,TANG Flagship,190,108.8,205,460,4.9,100,CCS,235,7,AWD,SUV,준대형
+CUPRA,Born 170 kW - 59 kWh,160,59.0,156,360,6.7,110,CCS,385,5,RWD,세단,준중형
+CUPRA,Born 170 kW - 77 kWh,160,77.0,157,460,7.0,125,CCS,385,5,RWD,세단,준중형
+CUPRA,Born VZ,200,79.0,149,465,5.6,135,CCS,385,5,RWD,세단,준중형
+CUPRA,Tavascan Endurance,180,77.0,142,445,6.8,120,CCS,540,5,RWD,SUV,준중형
+CUPRA,Tavascan VZ,180,77.0,150,425,5.5,120,CCS,540,5,AWD,SUV,준중형
+Cadillac,Lyriq 600 E4,210,102.0,192,460,5.3,165,CCS,793,5,AWD,SUV,대형
+Citroen,e-Berlingo M 50 kWh,132,50.0,149,235,11.7,80,CCS,775,5,FWD,승합차,승합차
+Citroen,e-Berlingo XL 50 kWh,132,50.0,149,230,11.7,80,CCS,1050,7,FWD,승합차,승합차
+Citroen,e-C3,135,44.0,135,255,11.5,60,CCS,310,5,FWD,세단,소형
+Citroen,e-C3 Aircross,145,44.0,144,240,12.9,60,CCS,460,5,FWD,SUV,소형
+Citroen,e-C4,150,46.3,135,285,9.9,78,CCS,380,5,FWD,세단,준중형
+Citroen,e-C4 54 kWh,150,50.8,122,325,9.1,78,CCS,380,5,FWD,세단,준중형
+Citroen,e-C4 X,150,46.3,132,290,9.9,78,CCS,510,5,FWD,세단,준중형
+Citroen,e-C4 X 54 kWh,150,50.8,119,335,9.1,78,CCS,510,5,FWD,세단,준중형
+Citroen,e-SpaceTourer M 50 kWh,130,46.3,217,180,13.3,78,CCS,603,9,FWD,승합차,승합차
+Citroen,e-SpaceTourer M 75 kWh,130,68.0,202,260,14.2,79,CCS,603,9,FWD,승합차,승합차
+Citroen,e-SpaceTourer XL 50 kWh,130,46.3,219,180,13.3,78,CCS,989,9,FWD,승합차,승합차
+Citroen,e-SpaceTourer XL 75 kWh,130,68.0,204,260,14.2,79,CCS,989,9,FWD,승합차,승합차
+DS,3 E-Tense,150,50.8,128,300,9.0,85,CCS,350,5,FWD,SUV,소형
+DS,N째4 E-Tense,160,58.3,130,375,7.1,70,CCS,390,5,FWD,세단,준중형
+DS,N째8 AWD Long Range,190,97.2,146,530,5.4,130,CCS,620,5,AWD,SUV,중형
+DS,N째8 FWD,190,73.7,141,415,7.7,100,CCS,620,5,FWD,SUV,중형
+DS,N째8 FWD Long Range,190,97.2,136,545,7.8,130,CCS,620,5,FWD,SUV,중형
+Dacia,Spring Electric 45,125,25.0,109,165,19.1,29,CCS,308,4,FWD,세단,초소형
+Dacia,Spring Electric 65,125,25.0,114,160,13.7,29,CCS,308,4,FWD,세단,초소형
+Dongfeng,Box 31.4 kWh,140,29.0,126,190,12.5,50,CCS,326,5,FWD,세단,소형
+Dongfeng,Box 42.3 kWh,140,40.0,129,255,12.5,51,CCS,326,5,FWD,세단,소형
+Elaris,BEO 86 kWh,150,81.0,203,390,9.5,65,CCS,467,5,FWD,SUV,중형
+Fiat,500e 3+1 24 kWh,135,21.3,112,135,9.0,40,CCS,185,4,FWD,세단,소형
+Fiat,500e 3+1 42 kWh,150,37.3,122,235,9.0,67,CCS,185,4,FWD,세단,소형
+Fiat,500e Cabrio 24 kWh,135,21.3,112,135,9.0,40,CCS,185,4,FWD,스포츠카,소형
+Fiat,500e Cabrio 42 kWh,150,37.3,125,230,9.0,67,CCS,185,4,FWD,스포츠카,소형
+Fiat,500e Hatchback 24 kWh,135,21.3,112,135,9.0,40,CCS,185,4,FWD,세단,소형
+Fiat,500e Hatchback 42 kWh,150,37.3,118,235,9.0,67,CCS,185,4,FWD,세단,소형
+Fiat,600e,150,50.8,124,310,9.0,79,CCS,360,5,FWD,SUV,소형
+Fiat,Grande Panda,132,43.8,136,260,11.0,60,CCS,361,5,FWD,세단,소형
+Ford,Capri Extended Range AWD,180,79.0,148,455,5.3,135,CCS,572,5,AWD,세단,중형
+Ford,Capri Extended Range RWD,180,77.0,135,455,6.4,120,CCS,572,5,RWD,세단,중형
+Ford,Capri Standard Range RWD,160,52.0,163,320,9.0,85,CCS,572,5,RWD,세단,중형
+Ford,Explorer Extended Range AWD,180,79.0,153,440,5.3,135,CCS,536,5,AWD,SUV,준중형
+Ford,Explorer Extended Range RWD,180,77.0,139,435,6.4,120,CCS,536,5,RWD,SUV,준중형
+Ford,Explorer Standard Range RWD,160,52.0,137,305,8.7,85,CCS,536,5,RWD,SUV,준중형
+Ford,Mustang Mach-E ER AWD (MY25),180,88.0,160,435,4.8,105,CCS,519,5,AWD,SUV,중형
+Ford,Mustang Mach-E ER AWD (MY24),180,91.0,165,445,4.6,115,CCS,519,5,AWD,SUV,중형
+Ford,Mustang Mach-E ER RWD (MY25),180,88.0,147,475,6.1,105,CCS,519,5,RWD,SUV,중형
+Ford,Mustang Mach-E ER RWD (MY24),180,91.0,152,480,5.9,115,CCS,519,5,RWD,SUV,중형
+Ford,Mustang Mach-E GT (MY24),200,91.0,177,425,3.8,115,CCS,519,5,AWD,SUV,중형
+Ford,Mustang Mach-E GT (MY25),200,91.0,177,435,3.8,115,CCS,519,5,AWD,SUV,중형
+Ford,Mustang Mach-E Rally (MY25),200,91.0,178,415,3.9,115,CCS,519,5,AWD,SUV,중형
+Ford,Mustang Mach-E Rally (MY24),200,91.0,178,410,3.9,115,CCS,519,5,AWD,SUV,중형
+Ford,Mustang Mach-E SR RWD (MY24),180,72.6,154,385,6.2,100,CCS,519,5,RWD,SUV,중형
+Ford,Mustang Mach-E SR RWD (MY25),180,72.6,154,380,6.2,100,CCS,519,5,RWD,SUV,중형
+Ford,Puma Gen-E,160,43.6,126,275,8.0,85,CCS,523,5,FWD,SUV,소형
+Ford,e-Tourneo Courier,145,43.6,164,200,11.0,80,CCS,2162,5,FWD,승합차,승합차
+Ford,e-Tourneo Custom L1 160 kW,130,64.0,370,235,9.0,70,CCS,672,8,RWD,승합차,승합차
+Ford,e-Tourneo Custom L1 210 kW,130,64.0,370,235,8.0,70,CCS,672,8,RWD,승합차,승합차
+Ford,e-Tourneo Custom L2 160 kW,150,64.0,370,235,9.0,70,CCS,672,8,RWD,승합차,승합차
+Ford,e-Tourneo Custom L2 210 kW,150,64.0,370,235,8.0,70,CCS,672,8,RWD,승합차,승합차
+GWM,ORA 03 48 kWh,160,45.4,146,260,8.3,45,CCS,228,5,FWD,세단,준중형
+GWM,ORA 03 63 kWh,160,59.3,141,340,8.2,56,CCS,228,5,FWD,세단,준중형
+GWM,ORA 03 GT,160,59.3,148,325,8.2,56,CCS,228,5,FWD,세단,준중형
+GWM,ORA 07 GT,180,83.5,161,430,4.5,80,CCS,333,5,AWD,세단,중형
+GWM,ORA 07 Pro,170,64.3,146,350,8.2,75,CCS,333,5,FWD,세단,중형
+GWM,ORA 07 Pure,170,64.3,146,350,8.2,75,CCS,333,5,FWD,세단,중형
+Genesis,G80 Electrified Luxury,225,82.5,159,440,4.9,160,CCS,354,5,AWD,세단,대형
+Genesis,GV60 Premium,185,74.0,143,390,7.8,200,CCS,432,5,RWD,SUV,준중형
+Genesis,GV60 Sport,200,74.0,157,375,5.5,200,CCS,432,5,AWD,SUV,준중형
+Genesis,GV60 Sport Plus,235,74.0,159,360,4.0,200,CCS,432,5,AWD,SUV,준중형
+Genesis,GV70 Electrified Sport,235,74.0,163,350,4.2,190,CCS,503,5,AWD,SUV,중형
+Honda,e:Ny1,160,61.9,150,335,7.6,60,CCS,361,5,FWD,SUV,소형
+Hongqi,E-HS9 120 kWh,200,112.0,217,455,4.9,110,CCS,438,5,AWD,SUV,대형
+Hongqi,E-HS9 84 kWh,200,76.5,193,320,6.5,112,CCS,438,5,AWD,SUV,대형
+Hongqi,E-HS9 99 kWh,200,90.0,194,370,4.9,112,CCS,438,5,AWD,SUV,대형
+Hyundai,INSTER Long Range,150,46.0,124,300,10.6,70,CCS,280,4,FWD,SUV,초소형
+Hyundai,INSTER Standard Range,140,39.0,119,255,11.7,60,CCS,280,4,FWD,SUV,초소형
+Hyundai,IONIQ 5 63 kWh RWD (MY24),185,60.0,136,345,8.5,150,CCS,520,5,RWD,SUV,준중형
+Hyundai,IONIQ 5 84 kWh AWD (MY24),185,80.0,162,445,5.3,205,CCS,520,5,AWD,SUV,준중형
+Hyundai,IONIQ 5 84 kWh RWD (MY24),185,80.0,155,450,7.5,205,CCS,520,5,RWD,SUV,준중형
+Hyundai,IONIQ 5 N (MY24),260,80.0,179,390,3.4,205,CCS,480,5,AWD,SUV,준중형
+Hyundai,IONIQ 6 Long Range 2WD,185,74.0,136,495,7.4,200,CCS,401,5,RWD,세단,중형
+Hyundai,IONIQ 6 Long Range AWD,185,74.0,143,440,5.1,200,CCS,401,5,AWD,세단,중형
+Hyundai,IONIQ 6 Standard Range 2WD,185,50.0,117,335,8.8,120,CCS,401,5,RWD,세단,중형
+Hyundai,IONIQ 9 Long Range AWD,200,106.0,177,490,6.7,195,CCS,338,7,AWD,SUV,대형
+Hyundai,IONIQ 9 Long Range RWD,185,106.0,171,500,9.4,195,CCS,338,7,RWD,SUV,대형
+Hyundai,IONIQ 9 Performance AWD,200,106.0,177,480,5.2,195,CCS,338,7,AWD,SUV,대형
+Hyundai,Kona Electric 48 kWh,160,48.4,128,295,8.8,50,CCS,466,5,FWD,SUV,소형
+Hyundai,Kona Electric 65 kWh,170,65.4,144,390,7.8,86,CCS,466,5,FWD,SUV,소형
+Jaguar,I-Pace EV400,200,84.7,208,380,4.8,85,CCS,505,5,AWD,SUV,중형
+Jeep,Avenger Electric,150,50.8,132,310,9.0,85,CCS,355,5,FWD,SUV,소형
+Jeep,Compass Electric 74 kWh,180,74.0,148,370,8.5,90,CCS,550,5,FWD,SUV,준중형
+KGM,Torres EVX,175,72.0,156,370,8.1,85,CCS,839,5,FWD,SUV,준중형
+Kia,EV3 Long Range,170,78.0,139,455,7.7,105,CCS,460,5,FWD,SUV,소형
+Kia,EV3 Standard Range,170,55.0,133,325,7.5,80,CCS,460,5,FWD,SUV,소형
+Kia,EV4 Hatchback Long Range,170,78.0,132,475,7.7,105,CCS,435,5,FWD,세단,준중형
+Kia,EV4 Hatchback Standard Range,170,55.0,134,340,7.4,80,CCS,435,5,FWD,세단,준중형
+Kia,EV4 Sedan Long Range,170,78.0,124,495,7.7,105,CCS,490,5,FWD,세단,준중형
+Kia,EV4 Sedan Standard Range,170,55.0,128,355,7.4,80,CCS,490,5,FWD,세단,준중형
+Kia,EV6 GT,260,80.0,178,385,3.5,205,CCS,480,5,AWD,SUV,준중형
+Kia,EV6 Long Range 2WD,185,80.0,143,455,7.3,205,CCS,490,5,RWD,SUV,준중형
+Kia,EV6 Long Range AWD,185,80.0,154,440,5.2,205,CCS,490,5,AWD,SUV,준중형
+Kia,EV6 Standard Range 2WD,185,60.0,140,345,8.7,150,CCS,490,5,RWD,SUV,준중형
+Kia,EV9 76.1 kWh RWD,190,73.0,165,355,8.5,160,CCS,333,7,RWD,SUV,대형
+Kia,EV9 99.8 kWh AWD,200,96.0,188,435,6.0,194,CCS,333,7,AWD,SUV,대형
+Kia,EV9 99.8 kWh AWD GT,220,96.0,190,420,4.6,194,CCS,333,7,AWD,SUV,대형
+Kia,EV9 99.8 kWh AWD GT-Line,200,96.0,190,425,5.3,194,CCS,333,7,AWD,SUV,대형
+Kia,EV9 99.8 kWh RWD,185,96.0,171,450,9.4,194,CCS,333,7,RWD,SUV,대형
+Kia,Niro EV,167,64.8,140,385,7.8,70,CCS,475,5,FWD,SUV,준중형
+Lancia,Ypsilon,150,48.1,122,310,8.2,80,CCS,309,5,FWD,세단,소형
+Leapmotor,C10,170,69.9,166,350,7.5,70,CCS,435,5,RWD,SUV,중형
+Leapmotor,T03,130,36.0,136,225,12.7,30,CCS,210,4,FWD,세단,초소형
+Lexus,RZ 300e,160,64.0,149,365,8.0,100,CCS,522,5,FWD,SUV,준중형
+Lexus,RZ 450e,160,64.0,158,350,5.6,100,CCS,522,5,AWD,SUV,중형
+Lexus,UX 300e,160,64.0,145,340,7.5,35,CHAdeMO,316,5,FWD,SUV,준중형
+Lotus,Eletre,250,109.0,204,495,4.5,259,CCS,611,5,AWD,SUV,대형
+Lotus,Eletre R,260,109.0,266,455,2.9,259,CCS,611,5,AWD,SUV,대형
+Lotus,Eletre S,250,109.0,222,480,4.5,259,CCS,611,5,AWD,SUV,대형
+Lotus,Emeya,250,98.9,198,520,4.2,240,CCS,509,5,AWD,세단,대형
+Lotus,Emeya R,256,98.9,227,465,2.8,240,CCS,509,5,AWD,세단,대형
+Lotus,Emeya S,250,98.9,198,520,4.2,240,CCS,509,5,AWD,세단,대형
+Lucid,Air Grand Touring,270,112.0,143,665,3.0,184,CCS,456,5,AWD,세단,대형
+Lucid,Air Pure RWD,200,92.0,130,565,4.7,160,CCS,456,5,RWD,세단,대형
+Lucid,Air Touring,250,92.0,142,580,3.2,160,CCS,456,5,AWD,세단,대형
+Lynk&Co,2,180,65.0,149,370,5.5,90,CCS,410,5,RWD,SUV,준중형
+MG,Cyberster GT,200,74.4,168,395,3.2,85,CCS,249,2,AWD,스포츠카,스포츠카
+MG,Cyberster Trophy,195,74.4,146,425,5.0,85,CCS,249,2,RWD,스포츠카,스포츠카
+MG,4 Electric 51 kWh,160,50.8,145,300,7.7,68,CCS,363,5,RWD,세단,준중형
+MG,4 Electric 64 kWh,160,61.7,142,360,7.9,116,CCS,363,5,RWD,세단,준중형
+MG,4 Electric 77 kWh,180,74.4,143,425,6.5,110,CCS,363,5,RWD,세단,준중형
+MG,4 Electric XPOWER,200,61.7,160,320,3.8,116,CCS,363,5,AWD,세단,준중형
+MG,5 Electric Long Range,185,57.4,151,335,7.7,60,CCS,479,5,FWD,세단,준중형
+MG,5 Electric Standard Range,185,46.0,148,265,7.7,53,CCS,479,5,FWD,세단,준중형
+MG,S5  EV 49 kWh,170,47.1,139,275,8.0,80,CCS,453,5,RWD,SUV,준중형
+MG,S5  EV 64 kWh,190,62.1,134,365,6.3,90,CCS,453,5,RWD,SUV,준중형
+MG,ZS EV Long Range,175,68.3,155,370,8.4,82,CCS,448,5,FWD,SUV,소형
+MG,ZS EV Standard Range,175,49.0,153,265,8.6,50,CCS,448,5,FWD,SUV,소형
+Maserati,GranCabrio Folgore,290,83.0,198,395,2.8,190,CCS,151,4,AWD,스포츠카,대형
+Maserati,GranTurismo Folgore,325,83.0,182,420,2.7,217,CCS,270,4,AWD,스포츠카,대형
+Maserati,Grecale Folgore,220,95.0,220,400,4.1,110,CCS,535,5,AWD,SUV,준대형
+Maxus,MIFA 9,180,84.0,195,365,9.2,103,CCS,2232,7,FWD,승합차,승합차
+Mazda,6e 68.8 kWh,175,66.0,138,390,7.6,120,CCS,456,5,RWD,세단,중형
+Mazda,6e Long Range 80 kWh,175,75.0,136,440,7.8,70,CCS,456,5,RWD,세단,중형
+Mercedes-Benz,CLA 250+,210,85.0,122,565,6.7,235,CCS,405,5,RWD,세단,중형
+Mercedes-Benz,CLA 350 4MATIC,210,85.0,126,550,4.9,235,CCS,405,5,AWD,세단,중형
+Mercedes-Benz,EQA 250,160,66.5,146,395,8.6,100,CCS,340,5,FWD,SUV,준중형
+Mercedes-Benz,EQA 250+,160,70.5,142,420,8.6,90,CCS,340,5,FWD,SUV,준중형
+Mercedes-Benz,EQA 300 4MATIC,160,66.5,162,350,7.7,100,CCS,340,5,AWD,SUV,준중형
+Mercedes-Benz,EQA 350 4MATIC,160,66.5,162,350,6.0,100,CCS,340,5,AWD,SUV,준중형
+Mercedes-Benz,EQB 250+,160,70.5,152,415,8.9,90,CCS,495,7,FWD,SUV,준중형
+Mercedes-Benz,EQB 300 4MATIC,160,66.5,168,345,8.0,100,CCS,495,7,AWD,SUV,준중형
+Mercedes-Benz,EQB 350 4MATIC,160,66.5,168,345,6.2,100,CCS,495,7,AWD,SUV,준중형
+Mercedes-Benz,EQE 300,210,89.0,163,525,7.3,120,CCS,430,5,RWD,세단,준대형
+Mercedes-Benz,EQE 350 4MATIC,210,90.6,173,515,6.3,141,CCS,430,5,AWD,세단,준대형
+Mercedes-Benz,EQE 350+,210,96.0,164,555,6.5,141,CCS,430,5,RWD,세단,준대형
+Mercedes-Benz,EQE 500 4MATIC,210,90.6,173,505,4.7,141,CCS,430,5,AWD,세단,준대형
+Mercedes-Benz,EQE AMG 43 4MATIC,210,90.6,207,450,4.2,141,CCS,430,5,AWD,세단,준대형
+Mercedes-Benz,EQE AMG 53 4MATIC+,220,90.6,208,450,3.5,141,CCS,430,5,AWD,세단,준대형
+Mercedes-Benz,EQE SUV 300,210,90.6,182,450,7.6,141,CCS,520,5,RWD,SUV,준대형
+Mercedes-Benz,EQE SUV 350 4MATIC,210,90.6,189,435,6.6,141,CCS,520,5,AWD,SUV,준대형
+Mercedes-Benz,EQE SUV 350+,210,96.0,164,475,6.9,141,CCS,520,5,RWD,SUV,준대형
+Mercedes-Benz,EQE SUV 500 4MATIC,210,96.0,187,455,4.9,141,CCS,520,5,AWD,SUV,준대형
+Mercedes-Benz,EQE SUV AMG 43 4MATIC,210,90.6,214,425,4.3,141,CCS,520,5,AWD,SUV,준대형
+Mercedes-Benz,EQE SUV AMG 53 4MATIC+,240,90.6,242,420,3.5,141,CCS,520,5,AWD,SUV,준대형
+Mercedes-Benz,EQS 350,210,96.0,165,570,6.7,130,CCS,620,5,RWD,세단,대형
+Mercedes-Benz,EQS 450 4MATIC,210,118.0,180,655,5.7,160,CCS,620,5,AWD,세단,대형
+Mercedes-Benz,EQS 450+,210,118.0,173,685,6.2,160,CCS,620,5,RWD,세단,대형
+Mercedes-Benz,EQS 500 4MATIC,210,118.0,180,640,4.9,160,CCS,620,5,AWD,세단,대형
+Mercedes-Benz,EQS 580 4MATIC,210,118.0,180,640,4.4,160,CCS,620,5,AWD,세단,대형
+Mercedes-Benz,EQS AMG 53 4MATIC+,250,118.0,222,585,3.4,160,CCS,620,5,AWD,세단,대형
+Mercedes-Benz,EQS SUV 450 4MATIC,210,118.0,199,530,6.1,160,CCS,645,7,AWD,SUV,대형
+Mercedes-Benz,EQS SUV 450+,210,118.0,195,540,6.8,160,CCS,645,7,RWD,SUV,대형
+Mercedes-Benz,EQS SUV 500 4MATIC,210,118.0,199,530,5.3,160,CCS,645,7,AWD,SUV,대형
+Mercedes-Benz,EQS SUV 580 4MATIC,210,118.0,199,530,4.7,160,CCS,936,7,AWD,SUV,대형
+Mercedes-Benz,EQS SUV Maybach 680,210,118.0,211,490,4.4,160,CCS,440,4,AWD,SUV,대형
+Mercedes-Benz,EQT 200 Long,132,45.0,177,220,13.3,50,CCS,828,7,FWD,승합차,승합차
+Mercedes-Benz,EQT 200 Standard,132,45.0,167,225,12.6,50,CCS,551,5,FWD,승합차,승합차
+Mercedes-Benz,EQV 250 Extra-Long,160,60.0,282,210,12.0,60,CCS,1410,7,FWD,승합차,승합차
+Mercedes-Benz,EQV 250 Long,160,60.0,282,215,12.0,60,CCS,1030,7,FWD,승합차,승합차
+Mercedes-Benz,EQV 300 Extra-Long,140,90.0,249,315,12.2,96,CCS,1410,7,FWD,승합차,승합차
+Mercedes-Benz,EQV 300 Long,160,90.0,276,320,12.1,96,CCS,1030,7,FWD,승합차,승합차
+Mercedes-Benz,G 580,180,116.0,267,360,4.7,150,CCS,555,5,AWD,SUV,대형
+Mercedes-Benz,eVito Tourer Extra-Long 60 kWh,160,60.0,254,215,12.0,60,CCS,1390,8,FWD,승합차,승합차
+Mercedes-Benz,eVito Tourer Long 60 kWh,160,60.0,259,220,12.0,60,CCS,990,8,FWD,승합차,승합차
+Mercedes-Benz,eVito Tourer Long 90 kWh,160,90.0,260,325,12.1,96,CCS,990,8,FWD,승합차,승합차
+Mini,Aceman E,160,38.5,129,230,7.9,60,CCS,300,5,FWD,SUV,소형
+Mini,Aceman JCW,200,49.2,143,280,6.4,75,CCS,300,5,FWD,SUV,소형
+Mini,Aceman SE,170,49.2,129,290,7.1,75,CCS,300,5,FWD,SUV,소형
+Mini,Cooper E,160,36.6,125,250,7.3,60,CCS,200,4,FWD,세단,소형
+Mini,Cooper JCW,200,49.2,135,290,5.9,75,CCS,200,4,FWD,세단,소형
+Mini,Cooper SE,170,49.2,127,330,6.7,75,CCS,200,4,FWD,세단,소형
+Mini,Countryman E,170,64.6,140,380,8.6,94,CCS,460,5,FWD,SUV,준중형
+Mini,Countryman SE ALL4,180,64.6,149,365,5.6,94,CCS,460,5,AWD,SUV,준중형
+NIO,EL6 Long Range,200,90.0,170,435,4.5,135,CCS,579,5,AWD,SUV,준대형
+NIO,EL6 Standard Range,200,73.5,181,365,4.5,110,CCS,579,5,AWD,SUV,준대형
+NIO,EL7 Long Range,200,90.0,185,430,3.9,100,CCS,570,5,AWD,SUV,대형
+NIO,EL7 Standard Range,200,73.5,198,355,3.9,110,CCS,570,5,AWD,SUV,대형
+NIO,EL8 Long Range,200,90.0,185,440,4.1,190,CCS,265,6,AWD,SUV,대형
+NIO,EL8 Standard Range,200,73.5,196,360,4.1,110,CCS,265,6,AWD,SUV,대형
+NIO,ET5 Long Range,200,90.0,167,500,4.0,100,CCS,386,5,AWD,세단,준대형
+NIO,ET5 Standard Range,200,73.5,175,410,4.0,110,CCS,386,5,AWD,세단,준대형
+NIO,ET5 Touring Long Range,200,90.0,178,485,4.0,135,CCS,450,5,AWD,세단,준대형
+NIO,ET5 Touring Standard Range,200,73.5,169,400,4.0,110,CCS,450,5,AWD,세단,준대형
+NIO,ET7 Long Range,200,90.0,178,505,3.8,100,CCS,363,5,AWD,세단,대형
+NIO,ET7 Standard Range,200,73.5,191,415,3.8,110,CCS,363,5,AWD,세단,대형
+Nissan,Ariya 63kWh,160,63.0,175,335,7.5,90,CCS,468,5,FWD,SUV,준중형
+Nissan,Ariya 87kWh,160,87.0,169,450,7.6,110,CCS,468,5,FWD,SUV,준중형
+Nissan,Ariya e-4ORCE 87kWh - 225 kW,200,87.0,190,405,5.7,110,CCS,415,5,AWD,SUV,준중형
+Nissan,Ariya e-4ORCE 87kWh - 320 kW Nismo,200,87.0,209,385,5.0,110,CCS,415,5,AWD,SUV,준중형
+Nissan,Townstar EV Passenger,132,45.0,158,225,12.6,50,CCS,819,5,FWD,승합차,승합차
+Nissan,Townstar EV Passenger L2,130,45.0,173,220,13.3,50,CCS,819,7,FWD,승합차,승합차
+Omoda,E5,172,61.0,152,345,7.6,60,CCS,380,5,FWD,SUV,준중형
+Opel,Astra Electric,170,50.8,128,320,9.2,85,CCS,352,5,FWD,세단,준중형
+Opel,Astra Sports Tourer Electric,170,50.8,123,310,9.3,85,CCS,516,5,FWD,세단,준중형
+Opel,Combo-e Life 50 kWh,135,50.0,149,235,11.3,80,CCS,775,5,FWD,승합차,승합차
+Opel,Combo-e Life XL 50 kWh,135,50.0,149,230,11.3,80,CCS,1050,7,FWD,승합차,승합차
+Opel,Corsa Electric 50 kWh,150,46.3,131,290,8.7,78,CCS,267,5,FWD,세단,소형
+Opel,Corsa Electric 51 kWh,150,48.1,120,315,8.1,80,CCS,267,5,FWD,세단,소형
+Opel,Frontera 44 kWh,140,44.0,144,245,12.1,60,CCS,460,5,FWD,SUV,소형
+Opel,Grandland 73 kWh,170,73.0,145,365,9.0,90,CCS,550,5,FWD,SUV,준중형
+Opel,Grandland 82 kWh,170,82.2,146,410,9.0,100,CCS,550,5,FWD,SUV,준중형
+Opel,Mokka Electric,150,50.8,126,285,9.0,85,CCS,310,5,FWD,SUV,소형
+Opel,Zafira-e Life L2 50 kWh,130,46.3,217,180,13.3,78,CCS,603,9,FWD,승합차,승합차
+Opel,Zafira-e Life L2 75 kWh,130,68.0,202,260,14.2,79,CCS,603,9,FWD,승합차,승합차
+Opel,Zafira-e Life L3 50 kWh,130,46.3,219,180,13.3,78,CCS,989,9,FWD,승합차,승합차
+Opel,Zafira-e Life L3 75 kWh,130,68.0,204,260,14.2,79,CCS,989,9,FWD,승합차,승합차
+Peugeot,e-2008 50 kWh,150,46.3,136,270,9.9,78,CCS,434,5,FWD,SUV,소형
+Peugeot,e-2008 54 kWh,150,50.8,125,300,9.1,85,CCS,434,5,FWD,SUV,소형
+Peugeot,e-208 50 kWh,150,46.3,132,290,9.0,78,CCS,265,5,FWD,세단,소형
+Peugeot,e-208 51 kWh,150,48.1,120,310,8.2,80,CCS,265,5,FWD,세단,소형
+Peugeot,e-3008 73 kWh,170,73.0,143,380,8.8,90,CCS,588,5,FWD,SUV,준중형
+Peugeot,e-3008 73 kWh Dual Motor,170,73.0,195,375,6.4,90,CCS,588,5,AWD,SUV,준중형
+Peugeot,e-3008 97 kWh Long Range,170,96.9,145,500,8.7,135,CCS,588,5,FWD,SUV,준중형
+Peugeot,e-308,170,50.8,124,300,9.8,80,CCS,412,5,FWD,세단,준중형
+Peugeot,e-308 SW,150,50.8,127,300,10.0,80,CCS,608,5,FWD,세단,준중형
+Peugeot,e-408 58 kWh,160,58.3,129,375,7.2,70,CCS,471,5,FWD,SUV,중형
+Peugeot,e-5008 73 kWh,170,73.0,150,370,9.7,90,CCS,348,7,FWD,SUV,중형
+Peugeot,e-5008 73 kWh Dual Motor,170,73.0,203,360,7.0,90,CCS,348,7,AWD,SUV,중형
+Peugeot,e-5008 97 kWh Long Range,170,96.9,152,485,9.6,135,CCS,348,7,FWD,SUV,중형
+Peugeot,e-Rifter M 50 kWh,132,50.0,152,235,11.7,80,CCS,775,5,FWD,승합차,승합차
+Peugeot,e-Rifter XL 50 kWh,132,50.0,153,230,11.7,80,CCS,1050,7,FWD,승합차,승합차
+Peugeot,e-Traveller L2 50 kWh,130,46.3,217,180,13.3,78,CCS,603,9,FWD,승합차,승합차
+Peugeot,e-Traveller L2 75 kWh,130,68.0,202,260,14.2,79,CCS,603,9,FWD,승합차,승합차
+Peugeot,e-Traveller L3 50 kWh,130,46.3,219,180,13.3,78,CCS,989,9,FWD,승합차,승합차
+Peugeot,e-Traveller L3 75 kWh,130,68.0,204,260,14.2,79,CCS,989,9,FWD,승합차,승합차
+Polestar,2 Long Range Dual Motor (MY26),205,79.0,142,455,4.5,125,CCS,407,5,AWD,세단,중형
+Polestar,2 Long Range Performance (MY26),205,79.0,142,450,4.2,125,CCS,407,5,AWD,세단,중형
+Polestar,2 Long Range Single Motor (MY26),205,79.0,130,475,6.2,125,CCS,407,5,RWD,세단,중형
+Polestar,2 Standard Range Single Motor (MY26),205,67.0,129,405,6.4,110,CCS,407,5,RWD,세단,중형
+Polestar,3 Long Range Dual motor,210,107.0,183,515,5.0,150,CCS,484,5,AWD,SUV,준대형
+Polestar,3 Long Range Performance,210,107.0,194,495,4.7,150,CCS,484,5,AWD,SUV,준대형
+Polestar,3 Long Range Single motor,180,107.0,166,530,7.8,150,CCS,484,5,RWD,SUV,준대형
+Polestar,4 Long Range Dual Motor,200,94.0,165,485,3.8,135,CCS,526,5,AWD,세단,준대형
+Polestar,4 Long Range Single Motor,180,94.0,157,495,7.4,135,CCS,526,5,RWD,세단,준대형
+Porsche,Macan 4 Electric,220,95.0,184,470,5.2,200,CCS,540,5,AWD,SUV,중형
+Porsche,Macan 4S Electric,240,95.0,186,470,4.1,200,CCS,540,5,AWD,SUV,중형
+Porsche,Macan Electric,220,95.0,177,495,5.7,200,CCS,540,5,RWD,SUV,중형
+Porsche,Macan Turbo Electric,260,95.0,183,460,3.3,200,CCS,480,5,AWD,SUV,중형
+Porsche,Taycan,230,82.3,164,495,4.8,195,CCS,407,5,RWD,세단,대형
+Porsche,Taycan 4,230,82.3,172,490,4.6,195,CCS,407,5,AWD,세단,대형
+Porsche,Taycan 4 Cross Turismo,220,97.0,188,510,4.7,281,CCS,446,5,AWD,세단,대형
+Porsche,Taycan 4 Plus,230,97.0,175,565,4.6,281,CCS,407,5,AWD,세단,대형
+Porsche,Taycan 4S,250,82.3,174,490,3.7,195,CCS,407,5,AWD,세단,대형
+Porsche,Taycan 4S Cross Turismo,240,97.0,188,510,3.8,281,CCS,446,5,AWD,세단,대형
+Porsche,Taycan 4S Plus,250,97.0,177,565,3.7,281,CCS,407,5,AWD,세단,대형
+Porsche,Taycan 4S Plus Sport Turismo,250,97.0,186,510,3.7,281,CCS,446,5,AWD,세단,대형
+Porsche,Taycan 4S Sport Turismo,250,82.3,183,440,3.7,195,CCS,446,5,AWD,세단,대형
+Porsche,Taycan GTS,250,97.0,176,535,3.3,281,CCS,366,5,AWD,세단,대형
+Porsche,Taycan GTS Sport Turismo,250,97.0,185,505,3.3,281,CCS,405,5,AWD,세단,대형
+Porsche,Taycan Plus,230,97.0,168,575,4.8,281,CCS,407,5,RWD,세단,대형
+Porsche,Taycan Plus Sport Turismo,230,97.0,176,530,4.8,281,CCS,446,5,RWD,세단,대형
+Porsche,Taycan Sport Turismo,230,82.3,173,460,4.8,195,CCS,446,5,RWD,세단,대형
+Porsche,Taycan Turbo,260,97.0,174,535,2.7,281,CCS,366,5,AWD,세단,대형
+Porsche,Taycan Turbo Cross Turismo,250,97.0,188,495,2.8,281,CCS,405,5,AWD,세단,대형
+Porsche,Taycan Turbo GT,290,97.0,184,475,2.3,281,CCS,326,5,AWD,세단,대형
+Porsche,Taycan Turbo GT Weissach,305,97.0,180,475,2.2,281,CCS,367,2,AWD,세단,대형
+Porsche,Taycan Turbo S,260,97.0,174,525,2.4,281,CCS,366,5,AWD,세단,대형
+Porsche,Taycan Turbo S Cross Turismo,250,97.0,188,485,2.5,281,CCS,405,5,AWD,세단,대형
+Porsche,Taycan Turbo S Sport Turismo,260,97.0,183,505,2.4,281,CCS,405,5,AWD,세단,대형
+Porsche,Taycan Turbo Sport Turismo,260,97.0,184,505,2.7,281,CCS,405,5,AWD,세단,대형
+Renault,4 E-Tech 40kWh 120hp,150,40.0,124,245,9.2,55,CCS,420,5,FWD,SUV,소형
+Renault,4 E-Tech 52kWh 150hp,150,52.0,127,315,8.2,70,CCS,420,5,FWD,SUV,소형
+Renault,5 E-Tech 40kWh 120hp,150,40.0,132,250,9.0,55,CCS,326,5,FWD,세단,소형
+Renault,5 E-Tech 40kWh 95hp,130,40.0,129,255,12.0,80,CCS,326,5,FWD,세단,소형
+Renault,5 E-Tech 52kWh 150hp,150,52.0,129,320,8.0,70,CCS,326,5,FWD,세단,소형
+Renault,Kangoo E-Tech Electric,135,45.0,158,225,12.6,50,CCS,950,5,FWD,승합차,승합차
+Renault,Kangoo Grand E-Tech Electric,130,45.0,170,220,13.3,50,CCS,500,7,FWD,승합차,승합차
+Renault,Megane E-Tech EV60 130hp (TU2025),150,60.0,125,380,10.5,88,CCS,440,5,FWD,세단,준중형
+Renault,Megane E-Tech EV60 220hp (TU2025),160,60.0,133,380,7.4,88,CCS,440,5,FWD,세단,준중형
+Renault,Scenic E-Tech EV60 170hp,150,60.0,144,340,8.6,75,CCS,545,5,FWD,SUV,준중형
+Renault,Scenic E-Tech EV87 220hp,170,87.0,143,480,7.9,95,CCS,545,5,FWD,SUV,준중형
+Rolls-Royce,Spectre,250,102.0,192,465,4.5,126,CCS,380,4,AWD,스포츠카,대형
+Skoda,Elroq 50,160,52.0,149,310,9.0,90,CCS,470,5,RWD,SUV,준중형
+Skoda,Elroq 60,160,59.0,149,350,8.5,110,CCS,470,5,RWD,SUV,준중형
+Skoda,Elroq 85,180,77.0,145,450,6.6,120,CCS,470,5,RWD,SUV,준중형
+Skoda,Elroq RS,180,79.0,151,450,5.4,135,CCS,470,5,AWD,SUV,준중형
+Skoda,Enyaq 60,160,59.0,145,360,8.1,110,CCS,585,5,RWD,SUV,준중형
+Skoda,Enyaq 85,180,77.0,141,455,6.7,120,CCS,585,5,RWD,SUV,준중형
+Skoda,Enyaq 85x,180,77.0,150,450,6.7,120,CCS,585,5,AWD,SUV,준중형
+Skoda,Enyaq Coupe 60,160,59.0,141,370,8.1,110,CCS,570,5,RWD,SUV,준중형
+Skoda,Enyaq Coupe 85,180,77.0,138,470,6.7,120,CCS,570,5,RWD,SUV,준중형
+Skoda,Enyaq Coupe 85x,180,77.0,146,460,6.7,120,CCS,570,5,AWD,SUV,준중형
+Skoda,Enyaq Coupe RS,180,79.0,143,470,5.4,135,CCS,570,5,AWD,SUV,준중형
+Skoda,Enyaq RS,180,79.0,147,460,5.4,135,CCS,585,5,AWD,SUV,준중형
+Skywell,BE11 Long Range,150,81.0,166,390,9.6,50,CCS,467,5,FWD,SUV,중형
+Skywell,BE11 Standard Range,150,68.0,149,330,9.6,50,CCS,467,5,FWD,SUV,중형
+Smart,#1 Brabus,180,62.0,155,325,3.9,100,CCS,313,5,AWD,SUV,소형
+Smart,#1 Premium,180,62.0,141,335,6.7,100,CCS,323,5,RWD,SUV,소형
+Smart,#1 Pro,180,47.0,152,250,6.7,65,CCS,323,5,RWD,SUV,소형
+Smart,#1 Pro+,180,62.0,148,335,6.7,100,CCS,323,5,RWD,SUV,소형
+Smart,#1 Pulse,180,62.0,155,325,4.5,100,CCS,313,5,AWD,SUV,소형
+Smart,#1 Pure,180,47.0,152,250,6.7,65,CCS,323,5,RWD,SUV,소형
+Smart,#1 Pure+,180,62.0,148,335,6.7,100,CCS,323,5,RWD,SUV,소형
+Smart,#3 Brabus,180,62.0,149,335,3.7,100,CCS,370,5,AWD,SUV,소형
+Smart,#3 Premium,180,62.0,136,355,5.8,110,CCS,370,5,RWD,SUV,소형
+Smart,#3 Pro,180,47.0,145,265,5.9,65,CCS,370,5,RWD,SUV,소형
+Smart,#3 Pro+,180,62.0,143,355,5.8,110,CCS,370,5,RWD,SUV,소형
+Smart,#5 Brabus,210,94.0,174,450,3.8,230,CCS,630,5,AWD,SUV,중형
+Smart,#5 Premium,200,94.0,159,465,6.5,230,CCS,630,5,RWD,SUV,중형
+Smart,#5 Pro,200,74.4,160,370,6.9,110,CCS,630,5,RWD,SUV,중형
+Smart,#5 Pro+,200,94.0,159,465,6.5,230,CCS,630,5,RWD,SUV,중형
+Smart,#5 Pulse,200,94.0,174,455,4.9,230,CCS,630,5,AWD,SUV,중형
+Smart,#5 Summit Edition,200,94.0,174,455,4.9,230,CCS,630,5,AWD,SUV,중형
+Subaru,Solterra AWD,160,64.0,154,320,6.9,100,CCS,441,5,AWD,SUV,준중형
+Tesla,Model 3 Long Range AWD (Highland),201,75.0,119,525,4.4,124,CCS,594,5,AWD,세단,중형
+Tesla,Model 3 Long Range RWD (Highland),201,75.0,117,545,5.2,124,CCS,594,5,RWD,세단,중형
+Tesla,Model 3 Performance (Highland),262,75.0,142,490,3.2,124,CCS,594,5,AWD,세단,중형
+Tesla,Model 3 RWD (Highland CATL LFP64),201,60.5,116,445,6.1,110,CCS,594,5,RWD,세단,중형
+Tesla,Model S Dual Motor,250,95.0,150,575,3.2,140,CCS,709,5,AWD,세단,대형
+Tesla,Model S Plaid,282,95.0,158,560,2.3,140,CCS,709,5,AWD,세단,대형
+Tesla,Model X Dual Motor,250,95.0,165,485,3.9,140,CCS,425,7,AWD,SUV,대형
+Tesla,Model X Plaid,262,95.0,180,465,2.7,140,CCS,425,7,AWD,SUV,대형
+Tesla,Model Y Long Range AWD (Juniper),201,75.0,132,455,4.8,124,CCS,854,5,AWD,SUV,중형
+Tesla,Model Y Long Range RWD (Juniper),201,75.0,121,470,5.6,124,CCS,854,5,RWD,SUV,중형
+Tesla,Model Y RWD (Juniper),201,60.5,121,375,5.9,110,CCS,854,5,RWD,SUV,중형
+Toyota,PROACE Verso L 75 kWh,130,68.0,204,260,13.3,79,CCS,989,9,FWD,승합차,승합차
+Toyota,PROACE Verso M 50 kWh,130,46.3,217,180,12.1,78,CCS,603,9,FWD,승합차,승합차
+Toyota,PROACE Verso M 75 kWh,130,68.0,202,260,13.3,79,CCS,603,9,FWD,승합차,승합차
+Toyota,Proace City Verso Electric L1 50 kWh,132,50.0,149,235,11.7,80,CCS,775,5,FWD,승합차,승합차
+Toyota,Proace City Verso Electric L2 50 kWh,132,50.0,149,230,11.7,80,CCS,1050,7,FWD,승합차,승합차
+Toyota,bZ4X AWD,160,64.0,154,345,6.9,100,CCS,452,5,AWD,SUV,준중형
+Toyota,bZ4X FWD,160,64.0,145,350,7.5,100,CCS,452,5,FWD,SUV,준중형
+VinFast,VF 8 Eco Extended Range,200,87.7,186,405,5.9,120,CCS,376,5,AWD,SUV,중형
+VinFast,VF 8 Plus Extended Range,200,87.7,196,400,5.5,120,CCS,376,5,AWD,SUV,중형
+Volkswagen,ID. Buzz LWB GTX,160,86.0,182,350,6.5,145,CCS,1340,7,AWD,승합차,승합차
+Volkswagen,ID. Buzz LWB Pro,160,86.0,190,370,7.9,145,CCS,1340,7,RWD,승합차,승합차
+Volkswagen,ID. Buzz NWB GTX,160,79.0,194,330,6.5,135,CCS,1121,6,AWD,승합차,승합차
+Volkswagen,ID. Buzz NWB Pro,160,79.0,187,360,7.6,135,CCS,1121,6,RWD,승합차,승합차
+Volkswagen,ID. Buzz NWB Pure,145,59.0,178,275,10.7,110,CCS,1121,6,RWD,승합차,승합차
+Volkswagen,ID.3 GTX,180,79.0,131,470,5.9,135,CCS,385,5,RWD,세단,준중형
+Volkswagen,ID.3 GTX Performance,200,79.0,131,465,5.6,135,CCS,385,5,RWD,세단,준중형
+Volkswagen,ID.3 Pro,160,59.0,136,365,7.6,110,CCS,385,5,RWD,세단,준중형
+Volkswagen,ID.3 Pro S,160,77.0,138,465,7.1,120,CCS,385,5,RWD,세단,준중형
+Volkswagen,ID.3 Pure,160,52.0,134,325,8.2,90,CCS,385,5,RWD,세단,준중형
+Volkswagen,ID.4 GTX,180,77.0,152,420,5.4,120,CCS,543,5,AWD,SUV,준중형
+Volkswagen,ID.4 Pro,180,77.0,149,445,6.7,120,CCS,543,5,RWD,SUV,준중형
+Volkswagen,ID.4 Pro 4MOTION,180,77.0,155,435,6.6,120,CCS,543,5,AWD,SUV,준중형
+Volkswagen,ID.4 Pure,160,52.0,143,285,9.0,87,CCS,543,5,RWD,SUV,준중형
+Volkswagen,ID.5 GTX,180,77.0,144,430,5.5,120,CCS,549,5,AWD,SUV,준중형
+Volkswagen,ID.5 Pro,180,77.0,138,460,6.7,120,CCS,549,5,RWD,SUV,준중형
+Volkswagen,ID.5 Pure,160,52.0,142,320,8.9,87,CCS,549,5,RWD,SUV,준중형
+Volkswagen,ID.7 GTX,180,86.0,145,500,5.4,145,CCS,532,5,AWD,세단,준대형
+Volkswagen,ID.7 Pro,180,77.0,132,475,6.5,125,CCS,532,5,RWD,세단,준대형
+Volkswagen,ID.7 Pro S,180,86.0,133,525,6.6,145,CCS,532,5,RWD,세단,준대형
+Volkswagen,ID.7 Tourer GTX,180,86.0,147,500,5.5,145,CCS,605,5,AWD,세단,준대형
+Volkswagen,ID.7 Tourer Pro,180,77.0,146,470,6.6,125,CCS,605,5,RWD,세단,준대형
+Volkswagen,ID.7 Tourer Pro S,180,86.0,125,520,6.7,145,CCS,605,5,RWD,세단,준대형
+Volvo,EC40 Single Motor (MY26),180,67.0,151,360,7.3,110,CCS,404,5,RWD,SUV,준중형
+Volvo,EC40 Single Motor ER (MY26),180,79.0,146,420,7.3,125,CCS,404,5,RWD,SUV,준중형
+Volvo,EC40 Twin Motor (MY26),180,79.0,155,400,4.8,125,CCS,404,5,AWD,SUV,준중형
+Volvo,EC40 Twin Motor Performance (MY26),180,79.0,155,400,4.6,125,CCS,404,5,AWD,SUV,준중형
+Volvo,ES90 Single Motor (MY26),180,88.0,135,485,6.9,190,CCS,446,5,RWD,세단,대형
+Volvo,ES90 Twin Motor (MY26),180,102.0,146,530,5.5,225,CCS,446,5,AWD,세단,대형
+Volvo,ES90 Twin Motor Performance (MY26),180,102.0,146,530,4.0,225,CCS,446,5,AWD,세단,대형
+Volvo,EX30 Cross Country (MY26),180,65.0,152,330,3.7,114,CCS,318,5,AWD,SUV,소형
+Volvo,EX30 Single Motor (MY24-26),180,49.0,147,275,5.7,80,CCS,318,5,RWD,SUV,소형
+Volvo,EX30 Single Motor ER (MY24-26),180,65.0,138,365,5.3,113,CCS,318,5,RWD,SUV,소형
+Volvo,EX30 Twin Motor Performance (MY24-26),180,65.0,145,340,3.6,113,CCS,318,5,AWD,SUV,소형
+Volvo,EX40 Single Motor (MY26),180,67.0,154,345,7.3,110,CCS,410,5,RWD,SUV,준중형
+Volvo,EX40 Single Motor ER (MY26),180,79.0,152,400,7.3,125,CCS,410,5,RWD,SUV,준중형
+Volvo,EX40 Twin Motor (MY26),180,79.0,163,385,4.8,125,CCS,410,5,AWD,SUV,준중형
+Volvo,EX40 Twin Motor Performance (MY26),180,79.0,163,385,4.6,125,CCS,410,5,AWD,SUV,준중형
+Volvo,EX90 Single Motor (MY24-26),180,100.0,182,460,8.4,140,CCS,310,7,RWD,SUV,대형
+Volvo,EX90 Twin Motor (MY24-26),180,107.0,188,470,5.9,150,CCS,310,7,AWD,SUV,대형
+Volvo,EX90 Twin Motor Performance (MY24-26),180,107.0,188,455,4.9,150,CCS,310,7,AWD,SUV,대형
+Voyah,Free 106 kWh,200,100.0,200,480,4.4,80,CCS,550,5,AWD,SUV,준대형
+XPENG,G6 AWD Performance,200,87.5,159,475,4.1,180,CCS,571,5,AWD,SUV,중형
+XPENG,G6 RWD Long Range,200,87.5,154,480,6.7,180,CCS,571,5,RWD,SUV,중형
+XPENG,G6 RWD Standard Range,200,66.0,152,370,6.9,140,CCS,571,5,RWD,SUV,중형
+XPENG,G9 AWD Performance,200,93.1,179,465,3.9,224,CCS,660,5,AWD,SUV,준대형
+XPENG,G9 RWD Long Range,200,93.1,163,480,6.4,224,CCS,660,5,RWD,SUV,준대형
+XPENG,G9 RWD Standard Range,200,75.8,165,395,6.4,170,CCS,660,5,RWD,SUV,준대형
+XPENG,P7 AWD Performance,200,82.7,164,460,4.1,138,CCS,440,5,AWD,세단,준대형
+XPENG,P7 RWD Long Range,200,82.7,144,495,6.7,138,CCS,440,5,RWD,세단,준대형
+XPENG,P7 Wing Edition,200,82.7,164,455,4.1,138,CCS,440,5,AWD,세단,준대형
+Zeekr,001 Long Range RWD,200,94.0,152,505,7.2,135,CCS,539,5,RWD,세단,준대형
+Zeekr,001 Performance AWD,200,94.0,159,480,3.8,135,CCS,539,5,AWD,세단,준대형
+Zeekr,001 Privilege AWD,200,94.0,162,480,3.8,135,CCS,539,5,AWD,세단,준대형
+Zeekr,7X Long Range RWD,210,94.0,153,475,6.0,260,CCS,539,5,RWD,SUV,중형
+Zeekr,7X Performance AWD,210,94.0,173,450,3.8,260,CCS,539,5,AWD,SUV,중형
+Zeekr,7X Premium RWD,210,71.0,148,365,6.0,240,CCS,539,5,RWD,SUV,중형
+Zeekr,X Core RWD (MY25),190,49.0,148,265,5.9,70,CCS,362,5,RWD,SUV,소형
+Zeekr,X Long Range RWD (MY25),190,65.0,146,360,5.6,114,CCS,362,5,RWD,SUV,소형
+Zeekr,X Privilege AWD (MY25),190,65.0,153,350,3.8,114,CCS,362,5,AWD,SUV,소형
+nio,firefly,150,41.2,125,250,8.1,65,CCS,404,5,RWD,세단,소형
